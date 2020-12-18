@@ -223,17 +223,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
         
-		/*
-		private void OnTriggerEnter(Collider other)
-		{
-			if (other.CompareTag("Coin")) // Detection of Coin
-			{
-				Destroy(other.gameObject); //Destroy Coin
-				coin += 1;
-
-			}
-		}
-		*/
 		
 	}
 }

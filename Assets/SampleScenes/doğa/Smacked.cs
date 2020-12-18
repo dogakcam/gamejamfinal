@@ -7,7 +7,7 @@ public class Smacked : MonoBehaviour
 
     // also create var for animation
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         Debug.Log("something touched me");
         if (collision.gameObject.tag == "Player")
@@ -17,7 +17,7 @@ public class Smacked : MonoBehaviour
                 child.gameObject.SetActive(false);
             //GetComponent<Animation>().Play; for animation
             //gameObject.GetComponent<Animation>().Play;
-
+            
             Destroy(transform.parent.gameObject);
         }
     }

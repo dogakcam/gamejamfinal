@@ -25,6 +25,7 @@ public class EnemyController : MonoBehaviour
              agent.SetDestination(target.position);
         }
     }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

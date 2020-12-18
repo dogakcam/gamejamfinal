@@ -35,7 +35,7 @@ public class newthirdperson : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 direction = new Vector3(horizontalInput, 0, verticalInput);
+        Vector3 direction = new Vector3(-horizontalInput, 0, -verticalInput);
 
         if (_controller.isGrounded)
         {

@@ -7,10 +7,12 @@ public class damage : MonoBehaviour
 {
     public int Hurt = 1;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
+        Debug.Log("Someone touched me");
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("Player touched me");
             Vector3 damageDirection = collision.transform.position + transform.position;
             damageDirection = damageDirection.normalized;
             FindObjectOfType<playerhealth>().DamagePlayer(Hurt, damageDirection);
